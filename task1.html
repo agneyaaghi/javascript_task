@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+        <p id="task1"></p>
+        <p id="task2"></p>
+        <p id="task3"></p>
+        <p id="task4"></p>
+        <p id="task5"></p>
+        <p id="task6"></p>
+<script>
+        const array1=["Finish homework","clean room","do exercises","arrange table","study"]; 
+        document.getElementById("task1").innerHTML=array1;         
+        array1.push("study sub 1");
+        array1.push("study sub 2");
+        array1.push("study sub 3");
+        document.getElementById("task2").innerHTML=array1; 
+        array1.pop();
+        document.getElementById("task3").innerHTML=array1;
+        const array2=["write notes","write assignment","planning for trip"]; 
+        const array3=array1.concat(array2);
+        document.getElementById("task4").innerHTML=array3;
+        let size=array3.length;
+        document.getElementById("task5").innerHTML=size;
+        if(array3.at(1)===array1.at(2)){
+                document.write("Duplicate task found");
+        }
+        else{
+                document.write("tasks are unique");
+        }
+        
+        const array4=["hii","hello","how are u"]
+        array4.splice(1,0,"play games");
+        document.getElementById("task6").innerHTML=array4;
+</script>       
+</body>
+</html>

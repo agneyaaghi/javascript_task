@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+</head>
+<body>
+
+      <p id="result"></p>
+      <p id="result1"></p>
+      <p id="result2"></p>
+
+            <script>
+                    let a = "       javascriptprgm       ";
+                    let b = a.trim();
+                    document.getElementById("result").innerHTML =
+                    "Length of a = " + a.length +"<br>Length of b = " + b.length;
+                    let c = "           javascript";
+                    let d = c.trimStart();
+                    document.getElementById("result1").innerHTML =
+                    "Length of c = " + c.length +"<br>Length of d = " + d.length;
+                    let e = "javascriptprogram       ";
+                    let f = e.trimEnd();
+                    document.getElementById("result2").innerHTML =
+                    "Length of e = " + e.length +"<br>Length of f = " + f.length;
+           </script>
+
+</body>
+</html>

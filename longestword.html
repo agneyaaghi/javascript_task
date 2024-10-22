@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+</head>
+<body>
+                 <p id="longest"></p>
+                 <script>
+                    let words=["apple","orang","grapes","bananas"];
+                    let lgword="";
+                    for(i=0;i<words.length;i++)
+                    {
+                    if(words[i].length>lgword.length)
+                    {
+                        lgword=words[i];        
+                    }
+                    }
+                    window.alert(lgword);
+                 </script>   
+</body>
+</html>

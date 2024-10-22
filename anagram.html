@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram Check</title>
+</head>
+<body>
+    <script>
+        let str1 = "what";
+        let str2 = "that";
+        let normalizedStr1 = str1.toLowerCase().replace(/\s+/g, '').split('').sort().join('');
+        let normalizedStr2 = str2.toLowerCase().replace(/\s+/g, '').split('').sort().join('');
+        let areAnagrams = normalizedStr1 === normalizedStr2;
+        window.alert(areAnagrams ? "they are anagrams" : "they are not anagrams");
+    </script>
+</body>
+</html>

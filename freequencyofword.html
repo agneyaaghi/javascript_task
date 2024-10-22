@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+</head>
+<body>
+<script>
+        let paragraph = "This is a javascript program to to find frequency of each word";
+        let words = paragraph.toLowerCase().split(' ');
+        console.log(words);
+        let wordFrequency = {};
+        words.forEach(word => {
+        wordFrequency[word] = (wordFrequency[word] || 0) + 1;});
+        console.log(wordFrequency);
+</script>
+</body>
+</html>

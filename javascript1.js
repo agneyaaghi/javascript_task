@@ -1,0 +1,32 @@
+let a=10;
+let b=20;
+let sum=a+b;
+let sub=b-a;
+let mult=a*b;
+let div=b/a;
+console.log(sum);
+console.log(sub);
+console.log(mult);
+console.log(div);
+
+var c=50;
+var d=100;
+var add=c+d;
+var subst=d-c;
+var multi=c*d;
+var divi=d/c;
+console.log(add);
+console.log(subst);
+console.log(multi);
+console.log(divi);
+
+const e=40;
+const f=120;
+const addi=e+f;
+const substr=f-e;
+const multip=e*f;
+const divis=f/e;
+console.log(addi);
+console.log(substr);
+console.log(multip);
+console.log(divis);

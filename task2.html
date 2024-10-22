@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width>, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+        <p id="task1"></p>
+        <p id="task2"></p>
+        <p id="task3"></p>
+        <p id="task4"></p>
+<script>
+        const array1=["hii","hello","how are u"];
+        array1.splice(1,2,"play games");
+        array1[1]="hh";
+        document.getElementById("task1").innerHTML=array1;
+        const array2=array1.slice(1);
+        array2.push("hii");
+        document.getElementById("task2").innerHTML=array2;
+        array3=["vatakara","koylandi","kkd","payyoli","mahe"];
+        document.getElementById("task3").innerHTML=array3;
+        array3.shift();
+        document.getElementById("task4").innerHTML=array3;
+</script>
+</body>
+</html>

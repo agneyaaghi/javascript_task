@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+</head>
+<body>
+            <script>
+                const words=["apple","banana","orange","mango"];
+                const Letter="a";
+                let temp=false;
+                for(let i=0;i<words.length;i++) {
+                if(words[i].includes(Letter))
+                {
+                temp=true; 
+                break;
+                }
+                }
+                if(temp=true) {
+                window.alert("all words contain the letter");
+                } else {
+                window.alert("not all words contain the letter");
+                }
+            </script>    
+</body>
+</html>

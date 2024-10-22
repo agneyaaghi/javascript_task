@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+</head>
+<body>
+                   <p id="task"></p>
+                   <p id="task1"></p>
+                   <p id="task2"></p>
+                   <p id="task3"></p>
+                   <p id="task4"></p>
+                   <p id="task5"></p>
+                   <p id="task6"></p>
+              <script>
+                      let tasks=["read","write","study sub1","study sub2","study sub3"];
+                      document.getElementById("task").innerHTML=tasks;
+                      tasks.push("do assignment","do seminar");
+                      document.getElementById("task1").innerHTML=tasks;
+                      tasks.pop();
+                      document.getElementById("task2").innerHTML=tasks;
+                      tasks.splice(1,0,"write notes");
+                      document.getElementById("task3").innerHTML=tasks;
+                      tasks.splice(2, 1);
+                      document.getElementById("task4").innerHTML=tasks;
+                      // document.getElementById("task").innerHTML=tasks;
+                      const newtasks1=tasks.slice(0,3); 
+                      document.getElementById("task5").innerHTML=tasks+"<br><br>"+newtasks1;
+                      const newtasks2=tasks.slice(2,5); 
+                      document.getElementById("task6").innerHTML=tasks+"<br><br>"+newtasks2;
+              </script> 
+</body>
+</html>

@@ -1,0 +1,9 @@
+let sentence = "javascript program to find longest word";
+let words = sentence.replace(/[^a-zA-Z\s]/g,'').split(/\s+/);
+let longestWord = '';
+for (let i = 0; i < words.length; i++) {
+if (words[i].length > longestWord.length) {
+longestWord = words[i];
+}
+}
+console.log(longestword);

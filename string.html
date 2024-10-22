@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+</head>
+<body>
+                    <h3 id="string"></h3>
+                    <h3 id="string2"></h3>
+                    <h3 id="string3"></h3>
+                    <h3 id="string4"></h3>
+                    <h3 id="string5"></h3>
+                    <h3 id="string6"></h3>
+                    <script>
+                              let str="how are you"; 
+                              document.getElementById("string").innerHTML=str.length;
+                              document.getElementById("string2").innerHTML=str.charAt(5);
+                              let strn="javascript";
+                              let letter=strn.at(4);
+                              document.getElementById("string3").innerHTML=letter;
+                              let strg="html,css,bootstrap";
+                              document.getElementById("string4").innerHTML=strg.substring(9,18);
+                              let slc=strg.slice(5,8);
+                              document.getElementById("string5").innerHTML=slc;
+                              let string="javascript,c language";
+                              let index=string.indexof("language");
+                              document.getElementById("string6").innerHTML=index;
+
+                    </script>
+</body>
+</html>
