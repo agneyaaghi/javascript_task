@@ -1,6 +1,10 @@
 function sum(numbers) {
-                    return numbers.reduce((accumulator, current) => accumulator + current, 0);
-                }
-                let Array=[2,4,6,8,10];
-                let total=sum(Array);
-                console.log(total);
+    let total=0; 
+    for (let i=0;i<numbers.length;i++) {
+        total+=numbers[i];
+    }
+    return total; 
+}
+let array=[1,8,5,3,9,3];
+let total=sum(array);
+console.log(total);
