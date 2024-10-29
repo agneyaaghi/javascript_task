@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+</head>
+<body>
+                    <p id="obj1"></p>
+                    <p id="obj2"></p>
+                    <p id="obj3"></p>
+
+                    <script>
+
+                    let person={name:"aghi",age:20,place:"vatakara"};
+                    document.getElementById("obj1").innerHTML=JSON.stringify(person);
+                    person.name="anu";
+                    document.getElementById("obj2").innerHTML=JSON.stringify(person);
+                    delete person.age;
+                    document.getElementById("obj3").innerHTML=JSON.stringify(person);
+
+                    </script>
+</body>
+</html>
