@@ -1,7 +1,8 @@
 function one(){
 return new Promise((resolve,reject)=>{
-       console.log("how are you!");
-       setTimeout(()=>{resolve({name:"anu",age:20})},1000);            
+      console.log("how are you!");
+      setTimeout(()=>{
+      resolve({name:"anu",age:20})},1000);            
 });
 }
 async function two(){

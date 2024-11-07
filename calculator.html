@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+
+<input type="text" id="num1">
+<input type="text" id="num2">
+<p id="ans">ans</p>
+
+<button onclick="calculate('add')">+</button>
+<button onclick="calculate('sub')">-</button>
+<button onclick="calculate('mul')">*</button>
+<button onclick="calculate('div')">/</button>
+
+<script>
+let calculate=(calculation)=>{
+let result;
+let num1=parseInt(document.getElementById("num1").value);
+let num2=parseInt(document.getElementById("num2").value);
+
+if(!num1||!num2){
+window.alert("enter a valid number");             
+}
+else
+{
+
+switch(calculation){
+    case'add':result=num1+num2;
+              break;
+    case'sub':result=num1-num2;
+              break;
+    case'mul':result=num1*num2;
+              break;
+    case'div':result=num1/num2;
+              break;         
+}
+
+document.getElementById("ans").innerHTML=result;
+console.log(result);
+result
+
+}
+}
+</script>                   
+</body>
+</html>

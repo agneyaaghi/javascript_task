@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+body {
+display: flex;
+}
+.calculator {
+padding: 50px;
+}
+#res {
+width: 100%;
+height: 50px;
+margin-bottom: 30px;
+text-align: center;
+font-size: 30px;
+border: 1px solid #ccc;
+}
+.btn {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 10px;
+}
+button {
+height: 60px;
+font-size: 30px;
+background-color:darkmagenta;
+color: white;
+}
+</style>
+</head>
+<body>
+<div class="calculator">
+<input type="text" id="res" disabled />
+<div class="btn">
+<button onclick="Result('1')">1</button>
+<button onclick="Result('2')">2</button>
+<button onclick="Result('3')">3</button>
+<button onclick="Result('+')">+</button>
+<button onclick="Result('4')">4</button>
+<button onclick="Result('5')">5</button>
+<button onclick="Result('6')">6</button>
+<button onclick="Result('-')">-</button>
+<button onclick="Result('7')">7</button>
+<button onclick="Result('8')">8</button>
+<button onclick="Result('9')">9</button>
+<button onclick="Result('*')">*</button>
+<button onclick="clr()">C</button>
+<button onclick="Result('0')">0</button>
+<button onclick="calculate()">=</button>
+<button onclick="Result('/')">/</button>
+</div>
+</div>
+<script>
+function Result(value) {
+document.getElementById("res").value += value;
+}
+function clr() {
+document.getElementById("res").value = '';
+}
+function calculate() {
+const ans = document.getElementById("res");
+ans.value = eval(ans.value);
+}
+</script>
+</div>         
+</body>
+</html>
