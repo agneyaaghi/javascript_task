@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Calculator</title>
+  </head>
+  <body>
+    <h3 id="inp"></h3>
+    <h3 id="result"></h3>
+    <script>
+      let input = prompt("Enter your total mark percentage: ");
+      document.getElementById("inp").innerHTML = "Your input: " + input;
+      let totalMark = parseFloat(input);
+        let grade;
+        if (totalMark > 90) {
+          grade = "A";
+        } else if (totalMark >= 80 && totalMark <= 89) {
+          grade = "B";
+        } else if (totalMark >= 70 && totalMark <= 79) {
+          grade = "C";
+        } else if (totalMark >= 60 && totalMark <= 69) {
+          grade = "D";
+        } else if (totalMark >= 50 && totalMark <= 59) {
+          grade = "E";
+        } else {
+          grade = "Failed";
+        }
+        document.getElementById("result").textContent ="Your grade is: " + grade;
+    </script>
+  </body>
+</html>

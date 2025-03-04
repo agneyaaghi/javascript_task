@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+</head>
+<body>
+            <input id="t">
+            <button onclick="todo()">add</button>
+<script>
+               function todo(){
+               let value=document.getElementById('t').value
+               let para=document.createElement('p')
+               let del=document.createElement('button')
+               let deltext=document.createTextNode('delete')
+               del.appendChild(deltext)
+               para.appendChild(del)
+               let text=document.createTextNode(value)
+               para.appendChild(text)
+               document.body.appendChild(para)
+               del.addEventListener('click',()=>{
+               para.remove()
+               })
+               }
+</script>               
+</body>
+</html>

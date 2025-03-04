@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Even Numbers in Array</title>
+</head>
+<body>
+    <h2>Find the Number of Even Numbers in an Array</h2>
+    <label for="arrayInput">Enter array elements (comma-separated): </label>
+    <input type="text" id="arrayInput">
+    <button onclick="countEvenNumbers()">Count Even Numbers</button>
+    <p id="result"></p>
+    <script>
+        function countEvenNumbers() {
+            let input = document.getElementById('arrayInput').value;
+            let arr = input.split(',').map(num => parseInt(num.trim()));
+            if (arr.some(isNaN)) {
+                document.getElementById('result').textContent = "Please enter a valid array of numbers.";
+                return;
+            }
+            let evenCount = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] % 2 === 0) {
+                    evenCount++; 
+                }
+            }
+            document.getElementById('result').textContent = `Number of even numbers: ${evenCount}`;
+        }
+    </script>
+</body>
+</html>

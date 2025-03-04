@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>
+</head>
+<body>
+   <p id="one"></p>
+<script>
+   let count=0;
+   let array=[3,0,4,0,7];
+   for(let i=0;i<array.length;i++){
+      if(array[i]===0){
+         array.splice(i,1)
+         count++;
+      }
+   }
+   for(j=0;j<count;j++){
+      array.push(0)
+   }
+   document.getElementById("one").innerHTML=array;
+</script>
+</body>
+</html>
+                    

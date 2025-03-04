@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Document</title>  
+                    <style>
+                        #add{
+                              background-color: darkmagenta;
+                              color: beige;
+                              padding: 13px;
+                              font-size: large;
+                              border: none;
+                        }
+                        #btn{
+                              background-color: coral;
+                              color:darkred;
+                              padding: 15px;
+                              font-size: large;
+                        }
+                        button{
+                              background-color:darkmagenta;
+                              color:azure;
+                              border: none;
+                              padding: 10px;
+                              margin-left:10px ;
+                              
+                        }
+                        body{
+                              background-color:blanchedalmond;
+                              padding-left: 40%;
+                        }
+                    </style>   
+                      
+</head>
+<body>     
+<input id="add">
+<button onclick="add()" id="btn">Add task</button>                    
+<script>
+function add(){
+      let value=document.getElementById("add").value;
+      let paragraph=document.createElement("h3");
+      let text=document.createTextNode(value)
+      paragraph.appendChild(text)
+      document.body.appendChild(paragraph)
+      let deleting=document.createElement('button')
+      let deletingtext=document.createTextNode('x')
+      deleting.appendChild(deletingtext)
+      paragraph.appendChild(deleting)
+      deleting.addEventListener('click',()=>{
+      paragraph.remove()
+      })
+}
+</script>
+</body>
+</html>

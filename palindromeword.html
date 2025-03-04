@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="inp"></p>
+    <p id="Palindrome"></p>
+    <script>
+      let str = prompt("Enter the string: ");
+      document.getElementById("inp").innerHTML = "Your input: " + str;
+      let removedStr = str.toLowerCase();
+      let revStr = removedStr.split("").reverse().join("");
+      let isPalindrome = removedStr === revStr;
+      document.getElementById("Palindrome").textContent = isPalindrome
+      ? "Entered string  is a palindrome": "Entered string is not a palindrome";
+    </script>
+  </body>
+</html>

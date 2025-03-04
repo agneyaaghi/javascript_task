@@ -10,7 +10,6 @@ return(item.name=="athira")
 });
 console.log(found);
 
-
 let founds=details.filter((item)=>{
 return(item.name=="arya")
 });
